@@ -1,19 +1,41 @@
 .header {
+
   display: flex;
   position: absolute;
   top: 0;
   right: 0;
   list-style-type: none;
   overflow: hidden;
-  font-family: arial,sans-serif;
+  font-family: arial, sans-serif;
   font-size: 13px;
 }
 
+.app-icon {
+  padding: 5px 10px;
+  align-items: center;
+}
+
+.app-icon :hover {
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.24), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50%;
+}
+
+.app-icon-li {
+  margin-right: 15px;
+  margin-top: 8px;
+}
+
+.pic :hover {
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.24), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50%;
+
+}
+
 .headerli a {
-  display: block;
+
   color: black;
   text-align: center;
-  padding: 5px 5px;
+  padding: 5px 10px;
   text-decoration: none;
 }
 
@@ -26,8 +48,16 @@
 }
 
 .container {
-  text-align: center;
+
   margin: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.google-logo {
+  height: 92px;
+  width: 272px;
 }
 
 .search-area {
@@ -37,14 +67,15 @@
   border-radius: 24px;
   box-shadow: none;
   z-index: 3;
-  height: 44px;
+  height: 38px;
   margin: 0 auto;
   margin-top: -77px;
   width: 582px;
+  padding: 5px 8px 0 14px;
 }
 
 .search-area:hover {
-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.24), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 .search {
@@ -99,9 +130,9 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   flex: 100%;
   margin-top: -68px;
   font: 16px arial, sans-serif;
-  line-height: 34px;
-  height: 34px !important;
-  width:480px;
+  line-height: 24px;
+  height: 24px !important;
+  width: 480px;
   text-rendering: auto;
   letter-spacing: normal;
   word-spacing: normal;
@@ -113,7 +144,7 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   cursor: text;
 }
 
-.keybord{
+.keybord {
   display: flex;
   align-items: center;
   padding-right: 8px;
@@ -123,7 +154,7 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   align-items: center;
 }
 
-.search-voice{
+.search-voice {
   display: flex;
   flex: 1 0 auto;
   align-items: center;
@@ -146,22 +177,26 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   position: relative;
 }
 
-.buttons{
-  border: 1px solid #f2f2f2 ;
+.buttons {
+
   padding-top: 18px;
   display: block;
   text-align: center;
-  height: 36px;  
+  height: 36px;
+}
+
+.buttons a {
+  border: 1px solid #f2f2f2;
 }
 
 .buttons :hover {
-  box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
-  }
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.24), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+}
 
 .googlesearch {
   font-size: 14px;
   font-family: Arial;
-  color: #5f6368,;
+  color: #5f6368, ;
   background-color: #f8f9fa;
   margin: 11px 4px;
   padding: 0 16px;
@@ -170,13 +205,13 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   text-align: center;
   cursor: pointer;
   user-select: none;
-  
+
 }
 
 .feelinglucky {
   font-size: 14px;
   font-family: Arial;
-  color: #5f6368,;
+  color: #5f6368, ;
   background-color: #f8f9fa;
   padding: 0 16px;
   line-height: 27px;
@@ -188,7 +223,7 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
 
 .footer {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   overflow: hidden;
   border: 1px solid #dfe1e5;
   border-top: 1px solid #dadce0;
@@ -197,22 +232,29 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   width: 100%;
   margin-left: -8px;
   line-height: 10px;
+  background-color: #f2f2f2;
+
 }
 
 .footerli {
-  float: left;
-}
-
-.footerli a {
-  display: block;
-  color: #70757a;
+  list-style-type: none;
+  display: inline-flex;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  padding: 5px 16px;
   font-family: arial, sans-serif;
   font-size: 14px;
-  margin-left: 14px;
-  margin-right: -20px;
+
+}
+
+.footerli li a {
+  color: #70757a;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.footer-right {
+  float: right;
+  margin-right: 20px;
 }
 
 .footerli a:hover {
