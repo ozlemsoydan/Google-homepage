@@ -8,39 +8,32 @@
   overflow: hidden;
   font-family: arial, sans-serif;
   font-size: 13px;
-}
-
-.app-icon {
-  padding: 5px 10px;
-  align-items: center;
+  margin: 10px;
 }
 
 .app-icon :hover {
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.24), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.24), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
   border-radius: 50%;
-}
-
-.app-icon-li {
-  margin-right: 15px;
-  margin-top: 8px;
+  
 }
 
 .pic :hover {
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.24), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.24), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
   border-radius: 50%;
 
 }
 
-.headerli a {
+.headerli{
+  float:right ;
+  padding-left: 10px;
+}
 
+.headerli a {
+  display: block;
   color: black;
   text-align: center;
   padding: 5px 10px;
   text-decoration: none;
-}
-
-.headerli a:hover {
-  text-decoration: underline;
 }
 
 .headerli a:hover {
